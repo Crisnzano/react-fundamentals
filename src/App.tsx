@@ -5,6 +5,7 @@ import MyReactApp from './components/CreatingNesting';
 import AboutPage from './components/About';
 import Profile from './components/Profile';
 import ShoppingList from './components/ShoppingList';
+import Board from './components/TicTacToe';
 
 function App() {
   return (
@@ -14,9 +15,13 @@ function App() {
         <AboutPage/>
         <Profile/>
         <ShoppingList/>
+        <Board/>
       </header>
     </div>
   );
 }
 
+
 export default App;
+
+
