@@ -6,6 +6,8 @@ import AboutPage from './components/About';
 import Profile from './components/Profile';
 import ShoppingList from './components/ShoppingList';
 import Board from './components/TicTacToe';
+import Section from './components/Section';
+import Heading from './components/Heading';
 
 function App() {
   return (
@@ -16,7 +18,26 @@ function App() {
         <Profile/>
         <ShoppingList/>
         <Board/>
-      </header>
+
+      <Section level={1}>
+      <Heading>Title</Heading>
+      <Section level={2}>
+        <Heading>Heading</Heading>
+        <Heading>Heading</Heading>
+        <Heading>Heading</Heading>
+        <Section level={3}>
+          <Heading>Sub-heading</Heading>
+          <Heading>Sub-heading</Heading>
+          <Heading>Sub-heading</Heading>
+          <Section level={4}>
+            <Heading>Sub-sub-heading</Heading>
+            <Heading>Sub-sub-heading</Heading>
+            <Heading>Sub-sub-heading</Heading>
+          </Section>
+        </Section>
+      </Section>
+    </Section>
+    </header>
     </div>
   );
 }

@@ -7,3 +7,11 @@ type MyButtonProps = {
     value: null;
     onSquareClick: () => void;
 }
+type SectionProps ={
+  children: any;
+  level: number;
+}
+
+type Props = {
+  children: React.ReactNode;
+}
